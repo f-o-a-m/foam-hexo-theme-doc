@@ -8,13 +8,21 @@
   }
 
   &__input:focus + &__btn {
-    color: $pink_Dark;
+    color: $brass;
     cursor: default;
+  }
+
+  .dc-input:focus {
+    border-color: $brass;
+  }
+
+  .dc-input:hover {
+    border-color: $brass;
   }
 
   &__btn {
     &:hover {
-      color: $pink_Dark;
+      color: $brass;
       cursor: default;
     }
   }

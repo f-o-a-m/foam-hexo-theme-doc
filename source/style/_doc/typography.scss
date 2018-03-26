@@ -4,12 +4,28 @@
 $type-1: 2.25rem;
 $type-2: 1.5rem;
 $type-3: 1.25rem;
-$type-4: 1rem;
-$type-5: 0.875rem;
-$type-6: 0.875rem;
+$type-4: 1.25rem;
 
-a { @include dc-link }
-p { @extend .dc-p }
+@mixin link {
+  @include dc-link
+  color: $brass;
+  font-weight: 600 !important;
+  transition: opacity 200ms;
+  &:hover {
+    opacity: 0.66 !important;
+    color: $brass;
+  }
+}
+
+a {
+  @include dc-link;
+  @include link;
+}
+
+::selection {
+  background-color: #ddd;
+  color: black;
+}
 
 * {
   font-family: 'Open Sans';
@@ -18,26 +34,69 @@ p { @extend .dc-p }
 
 h1 {
   font-family: 'Open Sans';
-  font-size: $type-1;
   font-weight: 700;
+  color: black;
+  margin-bottom: 6rem;
 }
 
 h2 {
   font-family: 'Open Sans';
-  font-size: $type-2;
   font-weight: 700;
+  color: black;
+  margin: 4rem 0rem;
 }
 
 h3 {
   font-family: 'Open Sans';
-  font-size: $type-3;
+  color: black;
+  margin: 2rem 0rem;
+
 }
 
 h4{
-  font-size: $type-4;
+  color: black;
+}
+
+p{
+  @extend .dc-p;
+  color: black;
 }
 
 hr {
   @include dc-divider;
   @include dc-divider--secondary;
+}
+
+// .doc-sidebar-list__item--label {
+//   color: black !important;
+//   font-weight: 600 !important;
+// }
+
+.doc-sidebar-list__item--current, .doc-sidebar-list__item--current-ancestor {
+  color: $brass !important;
+}
+
+.doc-sidebar-list__toc-item--current {
+  color: $brass !important;
+}
+
+.doc-sidebar-list__item{
+  color: #4a4a4a !important;
+}
+
+.hexo-swagger-ui-v3 .swagger-ui .info a {
+  color: $brass !important;
+  font-weight: 600 !important;
+  transition: opacity 200ms;
+  &:hover {
+    opacity: 0.66 !important;
+  }
+}
+
+.doc-sidebar-list__item--label {
+  font-size: 16px !important;
+}
+
+figure {
+  border-radius: 4px;
 }

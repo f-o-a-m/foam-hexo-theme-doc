@@ -32,6 +32,11 @@ body {
     }
   }
 
+  .dc-card {
+    border-radius: 16px;
+    box-shadow: 0px 2px 30px rgba(0,0,0,0.08);
+  }
+
   &.doc-sidebar--is-visible {
     @media screen and (max-width: $doc-breakpoint) {
       .doc-sidebar {
@@ -47,4 +52,8 @@ body {
 
 .doc-sidebar__vertical-menu {
   display: none;
+}
+
+.doc-content .dc-page {
+  overflow: visible !important;
 }

@@ -233,14 +233,14 @@
   }
 
   &__toc-item {
-    color: $doc-sidebar-color;
+    color: #222;
     list-style: none;
     font-weight: 300;
     padding-right: 12px;
     border-top: $doc-sidebar-item-border;
 
     &--current {
-      color: $doc-sidebar-current-color;
+      color: $brass;
     }
 
     &:first-child {
@@ -305,4 +305,10 @@
       content: '+';
     }
   }
+
+
+}
+
+.dc-icon--interactive:hover {
+  color: $brass;
 }
