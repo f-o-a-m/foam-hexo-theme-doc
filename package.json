@@ -1,5 +1,5 @@
 {
-  "name": "hexo-theme-doc",
+  "name": "foam-hexo-theme-doc",
   "version": "0.1.2",
   "main": "index.js",
   "description": "A documentation theme for Hexo",
@@ -11,7 +11,7 @@
     "open-api"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/zalando-incubator/hexo-theme-doc",
+  "homepage": "https://github.com/f-o-a-m/foam-hexo-theme-doc",
   "author": "Bhaskar Melkani <bhaskar.melkani@zalando.de>",
   "contributors": [
     "Ruben Barilani <ruben.barilani@zalando.de>"
@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:zalando-incubator/hexo-theme-doc.git"
+    "url": "git@github.com:f-o-a-m/foam-hexo-theme-doc.git"
   },
   "dependencies": {
     "@rbarilani/parse-template-object": "^1.0.0",
