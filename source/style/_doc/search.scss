@@ -4,20 +4,22 @@
   &__input[type="search"] {
     width: 100%;
     box-sizing: border-box;
+    border-radius: 999px;
   }
 
   &__input:focus + &__btn {
-    color: $dc-blue30;
+    color: $pink_Dark;
     cursor: default;
   }
 
   &__btn {
     &:hover {
-      color: $dc-gray40;
+      color: $pink_Dark;
       cursor: default;
     }
   }
 }
+
 
 .doc-search-results {
   &__title {

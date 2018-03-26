@@ -1,10 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+// Typescale
+$type-1: 2.25rem;
+$type-2: 1.5rem;
+$type-3: 1.25rem;
+$type-4: 1rem;
+$type-5: 0.875rem;
+$type-6: 0.875rem;
+
 a { @include dc-link }
 p { @extend .dc-p }
 
-h1 { @include dc-h1 }
-h2 { @include dc-h2 }
-h3 { @include dc-h3 }
-h4 { @include dc-h4 }
+* {
+  font-family: 'Open Sans';
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Open Sans';
+  font-size: $type-1;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: 'Open Sans';
+  font-size: $type-2;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: 'Open Sans';
+  font-size: $type-3;
+}
+
+h4{
+  font-size: $type-4;
+}
 
 hr {
   @include dc-divider;
