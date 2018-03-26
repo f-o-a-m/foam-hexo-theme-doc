@@ -1,21 +1,10 @@
 {
   "name": "foam-hexo-theme-doc",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "index.js",
-  "description": "A documentation theme for Hexo",
-  "keywords": [
-    "hexo",
-    "documentation",
-    "theme",
-    "swagger",
-    "open-api"
-  ],
+  "description": "FOAM Hexo Theme",
   "license": "MIT",
   "homepage": "https://github.com/f-o-a-m/foam-hexo-theme-doc",
-  "author": "Bhaskar Melkani <bhaskar.melkani@zalando.de>",
-  "contributors": [
-    "Ruben Barilani <ruben.barilani@zalando.de>"
-  ],
   "scripts": {
     "test": "jest --config ./jest.json",
     "test:coverage": "NODE_ENV=test jest --coverage --no-cache --runInBand --config ./jest.json",
